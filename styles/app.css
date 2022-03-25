@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(https://i.ibb.co/BcfgWTH/background.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #fff;
+}
+
+/* #NiceAndSimple: Main - margin:auto */
+
+
+a {
+  color: #00CED1;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+a:active {
+  opacity: 1;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: 5px 6px 9px rgb(0 0 0 / 16%);
+}
+
+.navig {
+  display: none;
+  align-items: center;
+}
+li{
+  list-style: none;
+}
+.nav-a {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
+.nav-tar-l {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 5%;
+}
+.nav-tar-r {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+}
+
+.wrapper{
+  overflow: hidden;
+  width: auto;
+  background: #fff;
+  height: 650px;
+}
+
+.swiper-video {
+  /* display: inline-block; 
+  width: 100%; 
+  max-width: 100%; 
+  height: auto; */
+  width: auto;
+  height: auto;
+  visibility: visible;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.index-title {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  z-index: 8;
+  text-align: center;
+}
+
+.index-title h1 {
+  font-size: 60px;
+  color: #fff;
+  letter-spacing: 5px;
+  margin-bottom: 65px;
+  margin-top: 50px;
+}
+
+.index-title h2{
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.index-title div{
+  position: relative;
+  bottom: calc(-14vh);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.index-title div button {
+  background: linear-gradient(45deg, transparent 0%, rgba(5, 217, 245, 0.342) 100%);
+  box-shadow: -5px 6px 18px rgb(0 0 0 / 75%);
+  /* margin-right: 20px; */
+  padding: 15px 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-title div button:hover {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  transition: all 0.5s;
+}
+
+.index-main{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.index-main h3 {
+  font-size: 30px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #1d202b;
+  line-height: 42px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 35px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.advantage dl {
+  width: 260px;
+  margin-right: 54px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.advantage dl dt {
+  margin-bottom: 15px;
+}
+
+.advantage dl dd {
+  text-align: left;
+}
+
+.cource {
+  width: 400px;
+  margin-bottom: 100px;
+  width: auto;
+  height: auto;
+}
+
+.cource ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cource ul li {
+  list-style: none;
+  width: 400px;
+  margin-right: 35px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.cource ul li img {
+  width: 400px;
+  height: 266px;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.cource ul li div {
+  padding: 17px 32px 8px;
+  border-left: 1px solid #e4e8ea;
+  border-right: 1px solid #e4e8ea;
+  border-bottom: 1px solid #e4e8ea;
+  border-radius: 0 0 10px 10px;
+  height: 150px;
+  text-align: left;
+}
+
+.cource ul li h4 {
+  font-size: 18px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #1d202b;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+
+.cource ul li:hover {
+  transform: translateY(-10px);
+  box-shadow: -5px 5px 10px rgb(93 101 110 / 39%);
+}
+
+.cource ul li p {
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #9b9b9b;
+  line-height: 20px;
+}
+
+.buttonInfo {
+  width: 100%;
+  background: #e6effa;
+  font-size: 16px;
+  color: #2a4560;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+}
+
+.buttonInfo span {
+  line-height: 10px;
+}
